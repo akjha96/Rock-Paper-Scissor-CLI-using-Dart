@@ -21,24 +21,18 @@ void main() {
       }
     }
 
-    if (playerChoice == Moves.rock && aiChoice == Moves.paper) {
+    if ((playerChoice == Moves.rock && aiChoice == Moves.paper) ||
+        (playerChoice == Moves.paper && aiChoice == Moves.scissor) ||
+        (playerChoice == Moves.scissor && aiChoice == Moves.rock)) {
       print('Your Choice: Rock \nAI Choice: Paper\nYou Loose!\n');
-    } else if (playerChoice == Moves.rock && aiChoice == Moves.scissor) {
+    } else if ((playerChoice == Moves.rock && aiChoice == Moves.scissor) ||
+        (playerChoice == Moves.paper && aiChoice == Moves.rock) ||
+        (playerChoice == Moves.scissor && aiChoice == Moves.paper)) {
       print('Your Choice: Rock \nAI Choice: Scissor\nYou Win!\n');
-    } else if (playerChoice == Moves.rock && aiChoice == Moves.rock) {
+    } else if ((playerChoice == Moves.rock && aiChoice == Moves.rock) ||
+        (playerChoice == Moves.paper && aiChoice == Moves.paper) ||
+        (playerChoice == Moves.scissor && aiChoice == Moves.scissor)) {
       print('Your Choice: Rock \nAI Choice: Rock\nIt\'s a Draw!\n');
-    } else if (playerChoice == Moves.paper && aiChoice == Moves.rock) {
-      print('Your Choice: Paper \nAI Choice: Rock\nYou Win!\n');
-    } else if (playerChoice == Moves.paper && aiChoice == Moves.paper) {
-      print('Your Choice: Paper \nAI Choice: Paper\nIt\'s a Draw!\n');
-    } else if (playerChoice == Moves.paper && aiChoice == Moves.scissor) {
-      print('Your Choice: Paper \nAI Choice: Scissor\nYou Loose!\n');
-    } else if (playerChoice == Moves.scissor && aiChoice == Moves.rock) {
-      print('Your Choice: Scissor \nAI Choice: Rock\nYou Loose!\n');
-    } else if (playerChoice == Moves.scissor && aiChoice == Moves.paper) {
-      print('Your Choice: Scissor \nAI Choice: Paper\nYou Win!\n');
-    } else if (playerChoice == Moves.scissor && aiChoice == Moves.scissor) {
-      print('Your Choice: Scissor \nAI Choice: Scissor\nIt\'s a Draw!\n');
     } else if (playerInput == 'q') {
       print('Thanks for playing! Bye Bye now!!\n');
       break;
