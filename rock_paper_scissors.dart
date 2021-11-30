@@ -24,7 +24,7 @@ void main() {
     if ((playerChoice == Moves.rock && aiChoice == Moves.paper) ||
         (playerChoice == Moves.paper && aiChoice == Moves.scissor) ||
         (playerChoice == Moves.scissor && aiChoice == Moves.rock)) {
-      print('Your Choice: Rock \nAI Choice: Paper\nYou Loose!\n');
+      print('Your Choice: Rock \nAI Choice: Paper\nYou Lose!\n');
     } else if ((playerChoice == Moves.rock && aiChoice == Moves.scissor) ||
         (playerChoice == Moves.paper && aiChoice == Moves.rock) ||
         (playerChoice == Moves.scissor && aiChoice == Moves.paper)) {
